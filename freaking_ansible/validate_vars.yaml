@@ -1,0 +1,11 @@
+---
+- name: Val vars for stuff
+  gather_facts: no
+  hosts: csr
+  tasks:
+    - name: stuff for printing
+      debug:
+        msg: "{{ ntp }}"
+    - name: printing more stuff
+      debug:
+        msg: "{{ timezone }}"
